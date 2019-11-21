@@ -8,7 +8,36 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="Aquamarine">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100px"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            
+        </Grid.ColumnDefinitions>
+
+        <NavigationView Grid.Column="0" Grid.RowSpan="2" x:Name="NaviView" PaneDisplayMode="LeftCompact" IsPaneOpen="False" IsBackButtonVisible="Collapsed">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Play" Content="Side1" Tag="Page1"/>
+                <NavigationViewItem Icon="Save" Content="Side2" Tag="Page2"/>
+                <NavigationViewItem Icon="Download" Content="Side3" Tag="Page3"/>
+            </NavigationView.MenuItems>
+        </NavigationView>
+
+        <StackPanel Grid.Column="1" Grid.Row="0" Background="LightCoral" Orientation="Horizontal">
+
+            <TextBlock Height="100"  Width="Auto" Text="Dato" FontSize="38" TextAlignment="Center" Foreground="White"/>
+            <TextBlock Height="100"  Width="Auto" Text="Tid1-Tid2" FontSize="38" TextAlignment="Center" Foreground="White" />
+            <TextBlock Height="100"  Width="Auto" Text="Type" FontSize="38" TextAlignment="Center" Foreground="White"/>
+
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1"  Background="CornflowerBlue" Height="668">
+
+        </StackPanel>
     </Grid>
 </Page>
