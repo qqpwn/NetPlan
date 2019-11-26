@@ -17,7 +17,15 @@ namespace NetPlan.Model
         private string _description;
         private int _accessLevel;
 
+        public static int autoIntriment = 1;
 
+        public Users()
+        {
+            
+            
+            autoIntriment++;
+
+        }
 
 
 
