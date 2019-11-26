@@ -127,9 +127,6 @@
     <Compile Include="Model\UsersCatalogSingelton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Viewmodel\ViewModel.cs" />
-    <Compile Include="View\Min_Profil.xaml.cs">
-      <DependentUpon>Min_Profil.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -155,10 +152,6 @@
     <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\Min_Profil.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Page2.xaml">
       <SubType>Designer</SubType>
