@@ -9,16 +9,15 @@ namespace NetPlan.Model
 {
     public class Users
     {
-        private int _id;
-        private string _name;
-        private int _phone;
-        private string _email;
-        private string _password;
-        private string _description;
-        private int _accessLevel;
-
-
-
+     
+        public int id { get; set; }    
+        public string email { get; set; }  
+        public string password { get; set; } 
+        public string salt { get; set; }
+        public string name { get; set; }
+        public int? phone { get; set; }
+        public string description { get; set; }
+        public int? accessLevel { get; set; }
 
 
     }

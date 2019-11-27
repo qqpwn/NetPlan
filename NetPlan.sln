@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetPlan", "NetPlan\NetPlan.csproj", "{CC36B695-B4F4-40C2-BE58-A3DCB55DB2DD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{846465A6-0003-4412-8428-80C3CAC5ADAE} = {846465A6-0003-4412-8428-80C3CAC5ADAE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectWebAPI", "ProjectWebAPI\ProjectWebAPI.csproj", "{846465A6-0003-4412-8428-80C3CAC5ADAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +50,26 @@ Global
 		{CC36B695-B4F4-40C2-BE58-A3DCB55DB2DD}.Release|x86.ActiveCfg = Release|x86
 		{CC36B695-B4F4-40C2-BE58-A3DCB55DB2DD}.Release|x86.Build.0 = Release|x86
 		{CC36B695-B4F4-40C2-BE58-A3DCB55DB2DD}.Release|x86.Deploy.0 = Release|x86
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Debug|ARM.Build.0 = Debug|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Debug|x64.Build.0 = Debug|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Debug|x86.Build.0 = Debug|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Release|ARM.ActiveCfg = Release|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Release|ARM.Build.0 = Release|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Release|ARM64.Build.0 = Release|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Release|x64.ActiveCfg = Release|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Release|x64.Build.0 = Release|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Release|x86.ActiveCfg = Release|Any CPU
+		{846465A6-0003-4412-8428-80C3CAC5ADAE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -119,12 +119,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Shifts.cs" />
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Model\Users.cs" />
-    <Compile Include="Model\UsersCatalogSingelton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Viewmodel\ViewModel.cs" />
   </ItemGroup>
