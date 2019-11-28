@@ -11,6 +11,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webApiNetplan", "webApiNetplan\webApiNetplan.csproj", "{0F6EA65D-B534-45B2-9819-0313484A4F8D}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "NetPlanDB", "NetPlanDB\NetPlanDB.sqlproj", "{E1E12111-F667-4BFC-B414-0090B561A773}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0F6EA65D-B534-45B2-9819-0313484A4F8D} = {0F6EA65D-B534-45B2-9819-0313484A4F8D}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

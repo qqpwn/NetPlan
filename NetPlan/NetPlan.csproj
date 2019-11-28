@@ -119,19 +119,26 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Corrections.cs" />
+    <Compile Include="Notify.cs" />
+    <Compile Include="Requesttype.cs" />
+    <Compile Include="Shiftrequests.cs" />
+    <Compile Include="Shifts.cs" />
+    <Compile Include="Shifttransfers.cs" />
+    <Compile Include="Users.cs" />
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Common\RelayCommand.cs" />
-    <Compile Include="Model\Users.cs" />
-    <Compile Include="Model\UsersCatalogSingelton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Viewmodel\ViewModel.cs" />
+    <Compile Include="WorkhourTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="efpt.config.json" />
     <None Include="NetPlan_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -164,6 +171,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Model\" />
     <Folder Include="Persistency\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

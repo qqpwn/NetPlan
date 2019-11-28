@@ -1,0 +1,53 @@
+﻿{
+   "ContextClassName": "NetplandbContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "DoNotCombineNamespace": false,
+   "IdReplace": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": null,
+   "ProjectRootNamespace": "NetPlan",
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[corrections]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[notify]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[requesttype]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[shiftrequests]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Shifts]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Shifttransfers]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Users]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[workhourTemplate]"
+      }
+   ],
+   "UseDatabaseNames": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false
+}
