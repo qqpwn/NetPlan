@@ -1,0 +1,100 @@
+﻿<Page
+    x:Class="Netplan.View.Update_Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Netplan_ErikogIda"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="GhostWhite">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+
+
+        </Grid.RowDefinitions>
+
+
+
+        <StackPanel Grid.Column="0">
+            <TextBlock Text="Opdater Min Profil" Foreground="Black" FontWeight="Bold" FontSize="30"  Height="56" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" >
+            <Border BorderThickness="2" >
+                <TextBox Text="Navn" FontSize="20" FontWeight="Bold" Foreground="Black" CornerRadius="8" Margin="30,0,30,0"></TextBox>
+            </Border>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="2" >
+            <Border BorderThickness="2" >
+                <TextBox Text="E-mail" FontSize="20" FontWeight="Bold" Foreground="Black" CornerRadius="8" Margin="30,0,30,0"></TextBox>
+            </Border>
+        </StackPanel>
+
+
+
+        <StackPanel Grid.Row="3" >
+            <Border BorderThickness="2" >
+                <TextBox Text="Telefonnummer" FontSize="20" FontWeight="Bold" Foreground="Black" CornerRadius="8" Margin="30,0,30,0"></TextBox>
+            </Border>
+        </StackPanel>
+
+
+
+        <StackPanel Grid.Row="4" >
+            <Border BorderThickness="2" >
+                <TextBox Text="Nuværende kodeord" FontSize="20" FontWeight="Bold" Foreground="Black" CornerRadius="8" Margin="30,0,30,0"></TextBox>
+            </Border>
+        </StackPanel>
+
+
+
+        <StackPanel Grid.Row="5" >
+            <Border BorderThickness="2" >
+                <TextBox Text="Nyt kodeord" FontSize="20" FontWeight="Bold" Foreground="Black" CornerRadius="8" Margin="30,0,30,0"></TextBox>
+            </Border>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="6" >
+            <Border BorderThickness="2" >
+                <TextBox Text="Gentag nyt kodeord" FontSize="20" FontWeight="Bold" Foreground="Black" CornerRadius="8" Margin="30,0,30,0"></TextBox>
+            </Border>
+        </StackPanel>
+
+
+
+
+        <StackPanel Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Stretch">
+            <Button HorizontalAlignment="Stretch" Margin="30,0,30,0" CornerRadius="8" Background="Gray" >
+                <TextBlock Text="Opdater" FontWeight="Bold" FontSize="20"/>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="8" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch">
+            <Button HorizontalAlignment="Stretch" Margin="30,0,30,0" Click="Button_Click" CornerRadius="8" Background="Gray" >
+                <TextBlock Text="Annuller" FontWeight="Bold" FontSize="20" Foreground="Black"/>
+            </Button>
+        </StackPanel>
+
+
+
+    </Grid>
+
+
+</Page>
+
+

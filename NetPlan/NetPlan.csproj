@@ -119,20 +119,38 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Corrections.cs" />
-    <Compile Include="Notify.cs" />
-    <Compile Include="Requesttype.cs" />
-    <Compile Include="Shiftrequests.cs" />
-    <Compile Include="Shifts.cs" />
-    <Compile Include="Shifttransfers.cs" />
-    <Compile Include="Users.cs" />
+    <Compile Include="Model\Corrections.cs" />
+    <Compile Include="Model\Notify.cs" />
+    <Compile Include="Model\Requesttype.cs" />
+    <Compile Include="Model\Shiftrequests.cs" />
+    <Compile Include="Model\Shifts.cs" />
+    <Compile Include="Model\Shifttransfers.cs" />
+    <Compile Include="Model\Users.cs" />
+    <Compile Include="View\Administrator_tilføj_Ansat.xaml.cs">
+      <DependentUpon>Administrator_tilføj_Ansat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bytte_visning.xaml.cs">
+      <DependentUpon>Bytte_visning.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Logind.xaml.cs">
+      <DependentUpon>Logind.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Viewmodel\ViewModel.cs" />
-    <Compile Include="WorkhourTemplate.cs" />
+    <Compile Include="Model\WorkhourTemplate.cs" />
+    <Compile Include="View\MinProfil.xaml.cs">
+      <DependentUpon>MinProfil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Update_Page.xaml.cs">
+      <DependentUpon>Update_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Vagtbytte_Visning.xaml.cs">
+      <DependentUpon>Vagtbytte_Visning.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -156,11 +174,35 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="View\Administrator_tilføj_Ansat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Bytte_visning.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Logind.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="View\MinProfil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Page2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Update_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Vagtbytte_Visning.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -171,7 +213,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
     <Folder Include="Persistency\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
