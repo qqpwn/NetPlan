@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NetPlan.Model
+namespace NetPlan.Common
 {
     class RelayCommand
     {
