@@ -126,11 +126,12 @@
     <Compile Include="Model\Shifts.cs" />
     <Compile Include="Model\Shifttransfers.cs" />
     <Compile Include="Model\Users.cs" />
+    <Compile Include="Persistency\Catalog.cs" />
     <Compile Include="View\Administrator_tilføj_Ansat.xaml.cs">
       <DependentUpon>Administrator_tilføj_Ansat.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Bytte_visning.xaml.cs">
-      <DependentUpon>Bytte_visning.xaml</DependentUpon>
+    <Compile Include="View\VagtVisning.xaml.cs">
+      <DependentUpon>VagtVisning.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Logind.xaml.cs">
       <DependentUpon>Logind.xaml</DependentUpon>
@@ -178,7 +179,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Bytte_visning.xaml">
+    <Page Include="View\VagtVisning.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -207,10 +208,11 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.9</Version>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Persistency\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
