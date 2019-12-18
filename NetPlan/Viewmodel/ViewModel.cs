@@ -9,7 +9,8 @@ namespace NetPlan.Viewmodel
 {
     public class ViewModel
     {
-        private int _selectedValue = 1;
+        //fields
+        private int _selectedValue = 2;
 
         private List<Shifts> _shifts;
         private List<WorkhourTemplate> _works;
@@ -30,6 +31,7 @@ namespace NetPlan.Viewmodel
           
 
         }
+        //properties
         public int SelectedValue
         {
             get { return _selectedValue; }
@@ -47,13 +49,14 @@ namespace NetPlan.Viewmodel
         {
             get { return _work; }
         }
+        // sætter en vagts start og slut tid sammen og fjerner sekunder
         public string FromTo
         {
             get {
                 return string.Format("{0:hh\\:mm} - {1:hh\\:mm}", _work.Start, _work.End);
             }
         }
-
+        //methods
         public void SetUser()
         {
             _user = _users.Find(x => x.Id == _shift.Fk_users);
