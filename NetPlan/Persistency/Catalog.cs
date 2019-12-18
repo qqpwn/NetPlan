@@ -28,6 +28,7 @@ namespace NetPlan.Persistency
                 return _instance;
             }
         }
+        //properties
         public T Single(int id)
         {
             return _single;
@@ -36,8 +37,9 @@ namespace NetPlan.Persistency
         {
             return _catalogList;
         }
+        //methods
 
-
+        // Henter en enkelt række ud hvis man sender et id med som andet parameter, returner altid som List
         public static List<T> Get(string url, int id = 0)
         {
             HttpClientHandler handler = new HttpClientHandler() { UseDefaultCredentials = true };

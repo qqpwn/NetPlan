@@ -11,14 +11,16 @@ namespace NetPlan
         public DateTime? Date { get; set; }
         public int? Fk_workhourTemplate { get; set; }
         public int? Fk_users { get; set; }
+
+        // Formaterer Date og gør at ugedagene står med stort
         public string DateToString
         {
             get
-            { //return string.Format("{0:ddd, d MMM, yyyy}", Date, new CultureInfo("da-DK");
+            { 
                 if (Date != null) { 
-                    DateTime lort = (DateTime)Date;
-                    string pis = lort.ToString("dddd d. MMM yyyy", new CultureInfo("da-DK"));
-                    return char.ToUpper(pis[0]) + pis.Substring(1);
+                    DateTime x = (DateTime)Date;
+                    string y = x.ToString("dddd d. MMM yyyy", new CultureInfo("da-DK"));
+                    return char.ToUpper(y[0]) + y.Substring(1);
                 }
                 return "Error! Error! Error! All mortals must perish!";
             }
