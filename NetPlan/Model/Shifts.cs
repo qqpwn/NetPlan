@@ -11,6 +11,8 @@ namespace NetPlan
         public DateTime? Date { get; set; }
         public int? Fk_workhourTemplate { get; set; }
         public int? Fk_users { get; set; }
+        public Users User { get; set; }
+        public WorkhourTemplate Work { get; set; }
         public string DateToString
         {
             get

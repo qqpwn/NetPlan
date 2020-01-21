@@ -41,7 +41,7 @@
 
         <StackPanel Grid.ColumnSpan="2" Grid.Row="2">
             <Border BorderThickness="2" BorderBrush="#c9d1cb" CornerRadius="8" Background="White" Margin="30,0,30,0">
-                <TextBlock TextAlignment="Center" Text="{Binding FromTo}" FontSize="20" FontFamily="Arial"  FontWeight="SemiBold"  Foreground="#035973"  ></TextBlock>
+                <TextBlock TextAlignment="Center" Text="{Binding Work.FromTo}" FontSize="20" FontFamily="Arial"  FontWeight="SemiBold"  Foreground="#035973"  ></TextBlock>
             </Border>
         </StackPanel>
         <StackPanel Grid.ColumnSpan="2" Grid.Row="3">

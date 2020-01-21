@@ -130,6 +130,15 @@
     <Compile Include="View\Administrator_tilføj_Ansat.xaml.cs">
       <DependentUpon>Administrator_tilføj_Ansat.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\AdminOpdaterVagt.xaml.cs">
+      <DependentUpon>AdminOpdaterVagt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminOpretVagt.xaml.cs">
+      <DependentUpon>AdminOpretVagt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminVagtliste.xaml.cs">
+      <DependentUpon>AdminVagtliste.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\VagtVisning.xaml.cs">
       <DependentUpon>VagtVisning.xaml</DependentUpon>
     </Compile>
@@ -176,6 +185,18 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="View\Administrator_tilføj_Ansat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AdminOpdaterVagt.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AdminOpretVagt.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AdminVagtliste.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

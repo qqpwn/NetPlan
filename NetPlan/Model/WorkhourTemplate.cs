@@ -11,9 +11,14 @@ namespace NetPlan
         public TimeSpan? Start { get; set; }
         public TimeSpan? End { get; set; }
         public float? Rate { get; set; }
-        public string FormatTime(TimeSpan? t)
+
+        public string FromTo
         {
-            return string.Format("{0: HH:mm}", t);
+            get
+            {
+                return string.Format("{0:hh\\:mm} - {1:hh\\:mm}", Start, End);
+            }
         }
+
     }
 }
