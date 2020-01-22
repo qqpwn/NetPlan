@@ -38,6 +38,10 @@ namespace NetPlan.View
             this.Frame.Navigate(typeof(AdminOpdaterVagt));
         }
 
+        private void VagtVisningsPage(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(VagtVisning));
+        }
 
     }
 }

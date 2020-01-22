@@ -28,28 +28,26 @@ namespace NetPlan.Viewmodel
 
         public ViewModel()
         {
-           
+
             _shifts = Catalog<Shifts>.Instance;
-            _shifts.Cataloglist = Catalog<Shifts>.Get("api/shifts");
+            UpdateShifts();
             _users = Catalog<Users>.Instance;
             _users.Cataloglist = Catalog<Users>.Get("api/users");
             _works = Catalog<WorkhourTemplate>.Instance;
             _works.Cataloglist = Catalog<WorkhourTemplate>.Get("api/workhourTemplates");
 
             OpretShift = new Shifts();
-            
-            
+            SetShift();
+            SetUpdateShift();
 
-            _shift = Catalog<Shifts>.Get("api/shifts", SelectedValue)[0];
-            OpdaterShift = _shift;
-            
 
-            SetWork();
-            SetUser();
+
   
             CreateShiftCommand = new RelayCommand(CreateShiftAsync);
             DeleteShiftCommand = new RelayCommand(DeleteShiftAsync);
-     
+            UpdateShiftCommand = new RelayCommand(UpdateShiftAsync);
+
+                
         }
         //Properties
         public int SelectedValue
@@ -114,18 +112,42 @@ namespace NetPlan.Viewmodel
         public ICommand CreateShiftCommand { get; set; }
         public ICommand DeleteShiftCommand { get; set; }
         public ICommand UpdateShiftCommand { get; set; }
+        
 
 
         //metoder
+
+        public void SetShift()
+        {
+            List<Shifts> shiftHolder = Catalog<Shifts>.Get("api/shifts", SelectedValue);
+            if (shiftHolder != null)
+            {
+                _shift = shiftHolder[0];
+                SetWork();
+                SetUser();
+            }
+        }
+
+        public void SetUpdateShift()
+        {
+            List<Shifts> shiftHolder = Catalog<Shifts>.Get("api/shifts", SelectedValue);
+            if (shiftHolder != null) OpdaterShift = shiftHolder[0];
+        }
+
         public void SetUser()
         {
             _user = _users.Cataloglist.Find(x => x.Id == _shift.Fk_users);
         }
-        public void SetWork()
+
+          public void SetWork()
         {
-            _work = _works.Cataloglist.Find(x => x.Id ==_shift.Fk_workhourTemplate);
+            _work = _works.Cataloglist.Find(x => x.Id == _shift.Fk_workhourTemplate);
         }
 
+        public void UpdateShifts()
+        {
+            _shifts.Cataloglist = Catalog<Shifts>.Get("api/shifts");
+        }
         public async void CreateShiftAsync()
         {
            await Catalog<Shifts>.Post("api/shifts", OpretShift);
@@ -134,7 +156,16 @@ namespace NetPlan.Viewmodel
         public async void DeleteShiftAsync()
         {
             await Catalog<Shifts>.Delete("api/shifts/"+ SelectedValue);
+            UpdateShifts();
             OnPropertyChanged(nameof(ShiftList));
+            
+        }
+
+        public async void UpdateShiftAsync()
+        {
+            await Catalog<Shifts>.Put("api/shifts/" + SelectedValue, OpdaterShift);
+            UpdateShifts();
+
         }
 
 

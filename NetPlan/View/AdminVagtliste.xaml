@@ -14,7 +14,7 @@
     <Grid>
         <ScrollViewer>
             <StackPanel>
-                <ListView ItemsSource="{Binding ShiftList}" SelectionMode="Single" SelectedValuePath="Id" SelectedValue="{Binding SelectedValue}">
+                <ListView ItemsSource="{Binding ShiftList}" SelectionMode="Single" SelectedValuePath="Id" SelectedValue="{Binding SelectedValue, Mode=TwoWay}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
@@ -27,9 +27,10 @@
                     </ListView.ItemTemplate>
                 </ListView>
                 <StackPanel Orientation="Horizontal">
-                    <Button Click="OpretVagtPage">Opret vagt</Button>
-                    <Button Click="OpdaterVagtPage">Opdater vagt</Button>
-                    <Button Command="{Binding DeleteShiftCommand}">Slet vagt</Button>
+                    <Button Margin="10,0" Click="OpretVagtPage">Opret vagt</Button>
+                    <Button Margin="10,0" Click="OpdaterVagtPage">Opdater vagt</Button>
+                    <Button Margin="10,0" Command="{Binding DeleteShiftCommand}">Slet vagt</Button>
+                    <Button Margin="10,0" Click="VagtVisningsPage">Vis vagt</Button>
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>

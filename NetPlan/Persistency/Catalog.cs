@@ -66,7 +66,7 @@ namespace NetPlan.Persistency
                         return rlist;
                     }
 
-                    return new List<T>();
+                    return null;
                 }
                 catch (Exception e)
                 {

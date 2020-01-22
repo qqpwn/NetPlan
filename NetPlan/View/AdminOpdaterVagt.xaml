@@ -5,10 +5,23 @@
     xmlns:local="using:NetPlan.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:NetPlan.Viewmodel"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Page.DataContext>
+        <vm:ViewModel>
+        </vm:ViewModel>
+    </Page.DataContext>
     <Grid>
+        <StackPanel>
+            <DatePicker SelectedDate="{Binding OpdaterShift.Date, Mode=TwoWay}"></DatePicker>
+            <ComboBox ItemsSource="{Binding Works}" DisplayMemberPath="Name" SelectedValue="{Binding OpdaterShift.Fk_workhourTemplate, Mode=TwoWay}" SelectedValuePath="Id"></ComboBox>
+            <ComboBox ItemsSource="{Binding Users}" DisplayMemberPath="Name" SelectedValue="{Binding OpdaterShift.Fk_users, Mode=TwoWay}" SelectedValuePath="Id"></ComboBox>
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="10,0" Command="{Binding UpdateShiftCommand}">Opdater</Button>
+                <Button Margin="10,0" Click="Cancel">Tilbage</Button>
+            </StackPanel>
+        </StackPanel>
 
     </Grid>
 </Page>

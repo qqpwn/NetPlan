@@ -55,16 +55,11 @@
             </Border>
         </StackPanel>
         <StackPanel Grid.Column="0"  Grid.Row="5" Padding="30,0,0,0">
-            <Button  Background="DeepSkyBlue" CornerRadius="8" Width="180">
-                <TextBlock Text="Ret vagt" Foreground="White" FontWeight="SemiBold" FontSize="20"  />
+            <Button Click="Cancel" Background="DeepSkyBlue" CornerRadius="8" Width="180">
+                <TextBlock Text="Tilbage" Foreground="White" FontWeight="SemiBold" FontSize="20"  />
             </Button>
         </StackPanel>
-        <StackPanel Grid.Column="1"  Grid.Row="5" Padding="0,0,30,0">
-            <Button  Background="DeepSkyBlue" CornerRadius="8" HorizontalAlignment="Right" Width="180">
-                <TextBlock TextAlignment="Center" Text="Sæt til salg" Foreground="White" FontWeight="SemiBold" FontSize="20"  />
-            </Button>
-        </StackPanel>
-
+     
 
 
 

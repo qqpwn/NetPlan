@@ -26,5 +26,11 @@ namespace NetPlan.View
         {
             this.InitializeComponent();
         }
+
+        private void Cancel(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(AdminVagtliste));
+        }
     }
+
 }
