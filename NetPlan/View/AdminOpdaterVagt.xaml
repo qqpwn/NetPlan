@@ -14,7 +14,7 @@
     </Page.DataContext>
     <Grid>
         <StackPanel>
-            <DatePicker SelectedDate="{Binding OpdaterShift.Date, Mode=TwoWay}"></DatePicker>
+            <DatePicker SelectedDate="{Binding OpdaterShift.DateTimeConverter, Mode=TwoWay}"></DatePicker>
             <ComboBox ItemsSource="{Binding Works}" DisplayMemberPath="Name" SelectedValue="{Binding OpdaterShift.Fk_workhourTemplate, Mode=TwoWay}" SelectedValuePath="Id"></ComboBox>
             <ComboBox ItemsSource="{Binding Users}" DisplayMemberPath="Name" SelectedValue="{Binding OpdaterShift.Fk_users, Mode=TwoWay}" SelectedValuePath="Id"></ComboBox>
             <StackPanel Orientation="Horizontal">

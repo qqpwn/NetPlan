@@ -25,11 +25,14 @@ namespace NetPlan.View
         public AdminOpdaterVagt()
         {
             this.InitializeComponent();
+            
         }
 
         private void Cancel(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AdminVagtliste));
         }
+
+
     }
 }

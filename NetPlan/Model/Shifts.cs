@@ -13,11 +13,31 @@ namespace NetPlan
         public int? Fk_users { get; set; }
         public Users User { get; set; }
         public WorkhourTemplate Work { get; set; }
+        
+        public DateTimeOffset DateTimeConverter
+        {
+            get
+            {
+                if (Date == null) return DateTimeOffset.Now;
+                else
+                {
+                    if (Date == DateTime.MinValue) return DateTime.Now;
+                    return (DateTimeOffset)Date;
+                }
+
+            }
+            set
+            {
+                Date = value.DateTime;
+            }
+        }
+
         public string DateToString
         {
             get
             { //return string.Format("{0:ddd, d MMM, yyyy}", Date, new CultureInfo("da-DK");
-                if (Date != null) { 
+                if (Date != null)
+                { 
                     DateTime x = (DateTime)Date;
                     string y = x.ToString("dddd d. MMM yyyy", new CultureInfo("da-DK"));
                     return char.ToUpper(y[0]) + y.Substring(1);

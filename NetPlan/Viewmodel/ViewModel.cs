@@ -151,6 +151,7 @@ namespace NetPlan.Viewmodel
         public async void CreateShiftAsync()
         {
            await Catalog<Shifts>.Post("api/shifts", OpretShift);
+
         }
 
         public async void DeleteShiftAsync()
@@ -165,10 +166,11 @@ namespace NetPlan.Viewmodel
         {
             await Catalog<Shifts>.Put("api/shifts/" + SelectedValue, OpdaterShift);
             UpdateShifts();
+           
 
         }
 
-
+        
 
         //INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;

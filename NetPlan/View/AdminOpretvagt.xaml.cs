@@ -32,6 +32,7 @@ namespace NetPlan.View
             this.Frame.Navigate(typeof(AdminVagtliste));
         }
 
+
     }
 
 
